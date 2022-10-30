@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #BAD1C2;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-weight: 300;
+}
+
+.header {
+    background-color: #153462;
+    padding: 25px 100px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+.add-button:hover {
+    transform: scale(1.05);
+}
+
+.edit-delete-button {
+    width: 15px;
+    height: 15px;
+    color: rgb(147, 94, 94);
+    float: right;
+    margin: 5px;    
+}
+
+.edit-delete-button:hover {
+    opacity: 0.8;
+}
+
+.sticker form {
+    margin-top: 0px;
+    
+}
+
+.sticker {
+    color: black;
+    background-color: #F6F6C9;
+    margin: 40px;   
+    width: 220px;
+    height: 195px;
+    text-align: center;
+    border: 1px solid #6e7887;
+}
+
+.sticker:hover {
+    border-bottom-right-radius: 30px;
+    transform: scale(1.05);
+}
+
+.sticker-container{
+    position: static;
+    display: inline-block;
+    padding: 0px;
+}
+
+.add-button {
+    height: 20px;
+    width: 200px;
+    background-color: #f8a1a1;
+    border: 1px solid black;
+    color: black;
+    margin: 0px;
+    text-align: center;
+}
+
+.title {
+    background-color: #f8a1a1;
+    border: 1px solid black;
+    color: black;
+    margin: 0px;
+    text-align: center;
+}
+
+.description {
+    background-color: #f8a1a1;
+    border: 1px solid black;
+    color: black;
+    margin: 0px;
+    text-align: center;
+}
