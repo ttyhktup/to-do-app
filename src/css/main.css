@@ -46,48 +46,60 @@ body {
 }
 
 .sticker {
+    flex-wrap: wrap;
     color: black;
+    padding: 10px;
     background-color: #F6F6C9;
     margin: 40px;   
-    width: 220px;
-    height: 195px;
+    width: 250px;
+    height: 210px;
     text-align: center;
-    border: 1px solid #6e7887;
+    border: 1px solid rgb(132, 132, 132);
+    font-size: 20px;
 }
 
 .sticker:hover {
     border-bottom-right-radius: 30px;
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .sticker-container{
-    position: static;
-    display: inline-block;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px ;
     padding: 0px;
 }
 
 .add-button {
-    height: 20px;
+    height: 35px;
     width: 200px;
     background-color: #f8a1a1;
-    border: 1px solid black;
+    border: 1px solid rgb(132, 132, 132);
     color: black;
-    margin: 0px;
+    margin: 8px;
     text-align: center;
 }
 
 .title {
+    height: 35px;
+    width: 200px;
     background-color: #f8a1a1;
-    border: 1px solid black;
+    border: 1px solid rgb(132, 132, 132);
     color: black;
-    margin: 0px;
+    margin: 8px;
     text-align: center;
 }
 
 .description {
+    height: 35px;
+    width: 200px;
     background-color: #f8a1a1;
-    border: 1px solid black;
+    border: 1px solid rgb(132, 132, 132);
     color: black;
-    margin: 0px;
+    margin: 8px;
     text-align: center;
+}
+
+.add-button:hover, .title:hover, .description:hover {
+    border: 1px solid rgb(83, 83, 83);
 }

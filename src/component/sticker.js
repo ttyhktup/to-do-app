@@ -15,7 +15,7 @@ class Sticker extends React.Component {
       return (<AddSticker sticker={this.sticker} onEdit={this.props.onEdit}/>)
     }
     return (
-      <div className="sticker-container">
+      <div>
         <div className="sticker">
         <BsFillXSquareFill onClick={() => this.props.onDelete(this.sticker.title)} className="edit-delete-button" />
         <BsFillPencilFill onClick={() => this.setState({

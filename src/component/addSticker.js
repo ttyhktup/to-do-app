@@ -19,7 +19,7 @@ class AddSticker extends React.Component {
         }
     }
     render() {
-        return (<div className="sticker-container">
+        return (<div >
             <div className="sticker">
                 <form ref={(el) => this.myForm = el}>
                     <input value={this.state.title} className="title" placeholder="Title" onChange={(e) => this.setState({ title: e.target.value })} />

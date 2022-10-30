@@ -14,24 +14,10 @@ class App extends React.Component {
       stickerList: [
         {
           id: 1,
-          title: "1",
-          description: "1"
+          title: "Chores",
+          description: "Do the dishes after lunch"
         },
-        {
-          id: 2,
-          title: "2",
-          description: "2"
-        },
-        {
-          id: 3,
-          title: "3",
-          description: "3"
-        },
-        {
-          id: 4,
-          title: "4",
-          description: "4"
-        }
+       
       ]
     }
     this.addSticker = this.addSticker.bind(this)
@@ -47,7 +33,7 @@ class App extends React.Component {
       <Header title={this.state.headerTitle}
         onClick={this.inputClick} />
 
-      <main>
+      <main className='sticker-container'>
         <AddSticker onAdd={this.addSticker} />
         {this.state.stickerList.map((el) => (
           <Sticker onEdit={this.addSticker} onDelete={this.deleteSticker} key={el.title} sticker={el} />
