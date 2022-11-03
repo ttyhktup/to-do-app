@@ -17,7 +17,7 @@ class Sticker extends React.Component {
     return (
       <div>
         <div className="sticker" style={{ backgroundColor: this.sticker.stickerColor }}>
-        <BsFillXSquareFill onClick={() => this.props.onDelete(this.sticker.title)} className="edit-delete-button" />
+        <BsFillXSquareFill onClick={() => this.props.onDelete(this.sticker.id)} className="edit-delete-button" />
         <BsFillPencilFill onClick={() => this.setState({
           editForm: !this.state.editForm 
         })} className="edit-delete-button" />

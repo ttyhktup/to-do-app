@@ -46,10 +46,11 @@ class App extends React.Component {
     );
   }
 
-  deleteSticker(title) {
+  deleteSticker(id) {
     this.setState({
-      stickerList: this.state.stickerList.filter((el) => el.title !== title)
+      stickerList: this.state.stickerList.filter((el) => el.id !== id)
     })
+    this.print()
   }
 
   addSticker(sticker) {
@@ -62,15 +63,19 @@ class App extends React.Component {
       }
       this.setState({ stickerList: stickerList })
     } else {
-      const id = this.state.stickerList.length + 1
-      this.setState({ stickerList: [...this.state.stickerList, { id, ...sticker }] })
+      sticker.id = this.state.stickerList.length + 1
+      this.setState({ stickerList: [...this.state.stickerList, sticker ] })
     }
-
+    this.print()
   }
 
   inputClick() {
     let headerTitleChange = this.state.headerTitle == "TO-DO" ? "TO-DO TO-DO TO-DO..." : "TO-DO";
     this.setState({ headerTitle: headerTitleChange })
+  }
+
+  print() {
+    console.log(this.state.stickerList)
   }
 }
 

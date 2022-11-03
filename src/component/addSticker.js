@@ -44,6 +44,7 @@ class AddSticker extends React.Component {
                                     deadline: this.state.deadline
                                 })
                             } else {
+                                console.log(this.state)
                                 this.props.onEdit({
                                     id: this.state.id,
                                     title: this.state.title,
