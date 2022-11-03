@@ -15,14 +15,16 @@ class App extends React.Component {
         {
           id: 1,
           title: "Chores",
-          description: "Do the dishes after lunch"
+          description: "Do the dishes after lunch",
+          stickerColor: "",
+          deadline: null
         },
        
       ]
     }
     this.addSticker = this.addSticker.bind(this)
     this.deleteSticker = this.deleteSticker.bind(this)
-
+    
     this.inputClick = this.inputClick.bind(this)
   }
 
@@ -36,7 +38,7 @@ class App extends React.Component {
       <main className='sticker-container'>
         <AddSticker onAdd={this.addSticker} />
         {this.state.stickerList.map((el) => (
-          <Sticker onEdit={this.addSticker} onDelete={this.deleteSticker} key={el.title} sticker={el} />
+          <Sticker onEdit={this.addSticker} onDelete={this.deleteSticker} key={el.title} sticker={el} /> 
         ))}
       </main>
 

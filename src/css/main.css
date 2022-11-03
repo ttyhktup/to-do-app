@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: #BAD1C2;
+    background-color: #eeeeee;
     font-family: 'Oswald', sans-serif;
     color: #fff;
     font-weight: 300;
 }
 
 .header {
-    background-color: #153462;
+    background-color: #6c809f;
     padding: 25px 100px;
     font-weight: 600;
     text-align: center;
@@ -23,17 +23,12 @@ body {
     display: inline-block;
 }
 
-
-.add-button:hover {
-    transform: scale(1.05);
-}
-
 .edit-delete-button {
     width: 15px;
     height: 15px;
     color: rgb(147, 94, 94);
     float: right;
-    margin: 5px;    
+    padding-right: 9px;
 }
 
 .edit-delete-button:hover {
@@ -42,64 +37,149 @@ body {
 
 .sticker form {
     margin-top: 0px;
-    
+
 }
 
 .sticker {
-    flex-wrap: wrap;
+    padding-top: 7px;
+    border-radius: 8px;
     color: black;
-    padding: 10px;
-    background-color: #F6F6C9;
-    margin: 40px;   
-    width: 250px;
-    height: 210px;
+    background-color: #f4eee3;
+    margin: 40px;
+    width: 420px;
+    height: 240px;
     text-align: center;
-    border: 1px solid rgb(132, 132, 132);
+    border: 1px solid rgb(155, 155, 155);
     font-size: 20px;
 }
 
 .sticker:hover {
-    border-bottom-right-radius: 30px;
-    transform: scale(1.01);
+
+    border: 1px solid rgb(102, 102, 102);
 }
 
-.sticker-container{
+.sticker-container {
     width: 90%;
     display: grid;
-    grid-template-columns: 350px 350px 350px 350px ;
+    grid-template-columns: 450px 450px 450px;
     padding: 0px;
 }
 
 .add-button {
+    border-radius: 5px;
     height: 35px;
-    width: 200px;
-    background-color: #f8a1a1;
+    width: 230px;
+    background-color: #d6dce1;
     border: 1px solid rgb(132, 132, 132);
     color: black;
-    margin: 8px;
+    margin: 5px 1px 0px 0px;
     text-align: center;
 }
 
 .title {
+    border-radius: 5px;
     height: 35px;
-    width: 200px;
-    background-color: #f8a1a1;
+    width: 230px;
+    background-color: #d6dce1;
     border: 1px solid rgb(132, 132, 132);
     color: black;
-    margin: 8px;
+    margin: 10px 5px 5px 5px;
     text-align: center;
 }
 
 .description {
+    border-radius: 5px;
     height: 35px;
-    width: 200px;
-    background-color: #f8a1a1;
+    width: 230px;
+    background-color: #d6dce1;
     border: 1px solid rgb(132, 132, 132);
     color: black;
-    margin: 8px;
+    margin: 5px;
     text-align: center;
 }
 
-.add-button:hover, .title:hover, .description:hover {
+.add-button:hover,
+.title:hover,
+.description:hover {
     border: 1px solid rgb(83, 83, 83);
+}
+
+.choose-radio {
+    display: block;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.choose-radio input[type=radio] {
+    display: none;
+}
+
+.choose-radio input[type=radio]:checked + label {
+	background: #ffe0a6;
+}
+
+.choose-radio label:hover {
+	color: #666;
+}
+
+.choose-radio input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
+}
+
+.choose-radio label {
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 10px;
+    line-height: 19px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    user-select: none;
+}
+
+.urgent {
+    background-color: #c98787;
+}
+
+.medium {
+    background-color: #c29d85;
+}
+
+.minor {
+    background-color: #f4eee3;
+}
+
+.radio-style {
+    background-color: rgb(197, 202, 206);
+}
+
+.deadline{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(173, 144, 144);
+    padding: 2px;
+    background-color: #edeff3;
+}
+
+.sticker-title{
+    padding: 7px;
+    color: rgb(79, 70, 70);
+}
+
+.sticker-description{
+    padding: 7px;
+    color: rgb(79, 70, 70);
+}
+
+.sticker-deadline{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 30px;
+    width: 170px;
+    background-color: rgb(232, 174, 174);
+    padding: 2px;
+    color: rgb(79, 70, 70);
+    margin: 0 auto;
 }

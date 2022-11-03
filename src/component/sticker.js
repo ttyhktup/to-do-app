@@ -16,15 +16,15 @@ class Sticker extends React.Component {
     }
     return (
       <div>
-        <div className="sticker">
+        <div className="sticker" style={{ backgroundColor: this.sticker.stickerColor }}>
         <BsFillXSquareFill onClick={() => this.props.onDelete(this.sticker.title)} className="edit-delete-button" />
         <BsFillPencilFill onClick={() => this.setState({
           editForm: !this.state.editForm 
         })} className="edit-delete-button" />
 
-        <h3>{this.sticker.title}</h3>
-        <p>{this.sticker.description}</p>
-
+        <h3 className="sticker-title">{this.sticker.title}</h3>
+        <p className="sticker-description">{this.sticker.description}</p>
+        <div><div className="sticker-deadline">{this.sticker.deadline}</div>  </div>
         </div>
       </div>
     )
